@@ -8,7 +8,7 @@ import { TabTitle } from "../utils/General";
 
 const Home = () => {
     const [ featuredItems, setFeaturedItems ] = useState()
-    TabTitle("Home - Shema");
+    TabTitle("Home - ShopEz");
 
     useEffect(() => {
         axios.get("https://shema-backend.vercel.app/api/items")

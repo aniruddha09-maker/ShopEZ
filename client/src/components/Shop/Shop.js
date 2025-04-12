@@ -6,7 +6,7 @@ import './Shop.css';
 import ReactLoading from 'react-loading';
 
 const Shop = () => {
-    TabTitle("Shop - SHEMA")
+    TabTitle("Shop - ShopEz")
     const [ menItems, setMenItems ] = useState()
     const [ womenItems, setWomenItems ] = useState()
     const [ kidsItems, setKidsItems ] = useState()
@@ -27,7 +27,7 @@ const Shop = () => {
 
     return ( 
         <div className="shop__contianer">
-            {loading && <ReactLoading type="balls" color='#FFE26E'  height={100} width={100} className='container h-100 w-10 justify-self-center align-self-center m-auto'/>}
+            {loading && <ReactLoading type="balls" color='#6e81ff'  height={100} width={100} className='container h-100 w-10 justify-self-center align-self-center m-auto'/>}
             {menItems && <ShopCategory name="Men" key="men" items={menItems}/>}
             {womenItems && <ShopCategory name="Women" key="women" items={womenItems}/>}
             {kidsItems && <ShopCategory name="Kids" key="kids" items={kidsItems}/>}
